@@ -19,3 +19,8 @@ Cost
     > cost of 10 - hashes 10 passwords per second on an average computer
     > cost of 15 - takes 3 seconds per hash
     > at this time a cost of 12 is considered very secure
+
+Async hashing   
+    > hashing is computationally intensive - it is recommended to do so 
+      asynchronously on the server to avoid blocking incoming connections
+      while hashing
