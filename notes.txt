@@ -1,0 +1,21 @@
+BCRYPT
+
+<------------------------------------>
+
+Hash 
+    > fingerprint of original data (always unique)
+    > data is fed into an algorithm, which returns a fixed length result
+
+Salt
+    > adding random data to original data before hashing process
+
+BCrypt hash structure
+    > [hash algorithm][cost][22 characters of salt in plaintext][hashed password]
+
+Cost 
+    > amount of power it takes to compute the hash
+    > logarithmic scale of 2^cost - determines how many times the 
+      data has been through the hashing algorithm
+    > cost of 10 - hashes 10 passwords per second on an average computer
+    > cost of 15 - takes 3 seconds per hash
+    > at this time a cost of 12 is considered very secure
