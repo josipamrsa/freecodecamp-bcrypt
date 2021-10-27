@@ -24,3 +24,7 @@ Async hashing
     > hashing is computationally intensive - it is recommended to do so 
       asynchronously on the server to avoid blocking incoming connections
       while hashing
+
+Sync hashing
+    > could cause lag if using it server side with a high cost 
+      or hashing often
